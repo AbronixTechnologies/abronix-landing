@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms &amp; Conditions – Abronix Technologies</title>
+    <meta name="description" content="Terms and Conditions for Abronix Technologies services including web design, branding, and digital solutions.">
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold:#F5A623;
+            --gold-dk:#C8820A;
+            --bg-body:#F7F8FA;
+            --bg-white:#FFFFFF;
+            --bg-off:#F0F2F5;
+            --text-dark:#1A1A2E;
+            --text-mid:#4A4A6A;
+            --text-muted:#7A7A9A;
+            --text-dim:#AAAACC;
+            --border:#E2E5EC;
+            --border-gold:rgba(245,166,35,.35);
+            --radius:18px;
+            --radius-sm:10px;
+            --shadow:0 4px 24px rgba(0,0,0,.07);
+            --shadow-gold:0 8px 36px rgba(245,166,35,.22);
+            --transition:all .35s cubic-bezier(.4,0,.2,1);
+            --font-head:'Syne',sans-serif;
+            --font-body:'DM Sans',sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-body);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-head);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 3px;
+        }
+
+        .text-gold {
+            color: var(--gold)!important;
+        }
+
+        #pNav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255,255,255,.97);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+            box-shadow: 0 2px 16px rgba(0,0,0,.06);
+        }
+
+        .p-nav-logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 9px;
+            padding: 3px;
+            background: #fff;
+            border: 1.5px solid var(--border-gold);
+        }
+
+        .p-brand-name {
+            font-family: var(--font-head);
+            font-weight: 800;
+            font-size: .88rem;
+            color: var(--text-dark);
+        }
+
+            .p-brand-name span {
+                color: var(--gold);
+            }
+
+        .p-brand-tag {
+            font-size: .54rem;
+            color: var(--text-muted);
+            letter-spacing: .09em;
+            text-transform: uppercase;
+        }
+
+        .btn-back {
+            padding: 8px 20px;
+            background: var(--gold);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-family: var(--font-head);
+            font-weight: 700;
+            font-size: .82rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+            .btn-back:hover {
+                background: var(--gold-dk);
+                color: #fff;
+                transform: translateY(-1px);
+            }
+
+        .policy-hero {
+            padding: 80px 0 50px;
+            background: linear-gradient(135deg,#fff 0%,#FFF8EE 100%);
+            border-bottom: 1px solid var(--border);
+        }
+
+            .policy-hero h1 {
+                font-size: clamp(1.9rem,4vw,2.8rem);
+                font-weight: 800;
+                color: var(--text-dark);
+            }
+
+            .policy-hero p {
+                color: var(--text-muted);
+                font-size: .92rem;
+                margin-top: .5rem;
+            }
+
+        .gold-bar {
+            width: 48px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+            margin: 1rem 0;
+        }
+
+        .policy-label {
+            font-size: .7rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+        }
+
+        .policy-body {
+            padding: 56px 0 80px;
+        }
+
+        .policy-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+        }
+
+            .policy-card h3 {
+                font-size: 1.05rem;
+                font-weight: 700;
+                color: var(--text-dark);
+                margin: 1.8rem 0 .55rem;
+                padding-top: 1rem;
+                border-top: 1px solid var(--border);
+            }
+
+                .policy-card h3:first-child {
+                    border-top: none;
+                    margin-top: 0;
+                    padding-top: 0;
+                }
+
+            .policy-card p, .policy-card li {
+                font-size: .9rem;
+                color: var(--text-muted);
+                line-height: 1.84;
+            }
+
+            .policy-card ul, .policy-card ol {
+                padding-left: 1.4rem;
+                margin: .6rem 0 1rem;
+            }
+
+                .policy-card ul li, .policy-card ol li {
+                    margin-bottom: .4rem;
+                }
+
+            .policy-card strong {
+                color: var(--text-dark);
+            }
+
+        .contact-note {
+            background: rgba(245,166,35,.07);
+            border: 1px solid rgba(245,166,35,.2);
+            border-radius: var(--radius-sm);
+            padding: 1.2rem 1.4rem;
+            margin-top: 1.5rem;
+        }
+
+            .contact-note p {
+                font-size: .87rem;
+                color: var(--text-mid);
+                margin: 0;
+                line-height: 1.85;
+            }
+
+            .contact-note a {
+                color: var(--gold);
+                font-weight: 600;
+            }
+
+        .toc-card {
+            background: var(--bg-off);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+            .toc-card h6 {
+                font-family: var(--font-head);
+                font-size: .8rem;
+                font-weight: 700;
+                color: var(--text-dark);
+                text-transform: uppercase;
+                letter-spacing: .08em;
+                margin-bottom: .8rem;
+            }
+
+            .toc-card ol {
+                padding-left: 1.3rem;
+                margin: 0;
+            }
+
+                .toc-card ol li {
+                    font-size: .85rem;
+                    color: var(--text-muted);
+                    margin-bottom: .3rem;
+                }
+
+                    .toc-card ol li a {
+                        color: var(--gold);
+                    }
+
+                        .toc-card ol li a:hover {
+                            text-decoration: underline;
+                        }
+
+        .highlight-box {
+            background: rgba(245,166,35,.06);
+            border-left: 3px solid var(--gold);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+        }
+
+            .highlight-box p {
+                font-size: .87rem;
+                color: var(--text-mid);
+                margin: 0;
+            }
+
+        .footer {
+            color: inherit;
+        }
+
+            .footer a:hover {
+                color: white;
+            }
+
+
+        /* ══ SCROLL-TO-TOP ══ */
+        #scrollTop {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 9999;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--gold);
+            color: #fff;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(245,166,35,.45);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(16px);
+            transition: var(--transition);
+        }
+
+            #scrollTop.show {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            #scrollTop:hover {
+                background: var(--gold-dk);
+                transform: translateY(-3px);
+                box-shadow: 0 8px 28px rgba(245,166,35,.55);
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav id="pNav">
+        <div class="container d-flex align-items-center justify-content-between gap-3">
+            <a href="index.html" class="d-flex align-items-center gap-2 p-nav-logo" style="text-decoration: none">
+                <img src="Privacy_40×40px.png" alt="Abronix Technologies">
+                <div>
+                    <div class="p-brand-name">ABRONIX <span>TECHNOLOGIES</span></div>
+                    <div class="p-brand-tag">Building Products That Grow Business</div>
+                </div>
+            </a>
+            <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i>Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="policy-hero">
+        <div class="container">
+            <div class="policy-label"><i class="fas fa-file-contract me-1"></i>Legal</div>
+            <div class="gold-bar"></div>
+            <h1>Terms &amp; <span class="text-gold">Conditions</span></h1>
+            <p>Last updated: <strong id="date"></strong>&nbsp;|&nbsp; Effective date: <strong>01 May 2026</strong></p>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="policy-body">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <!-- TOC -->
+                    <div class="toc-card">
+                        <h6>Table of Contents</h6>
+                        <ol>
+                            <li><a href="#t1">Acceptance of Terms</a></li>
+                            <li><a href="#t2">Services Offered</a></li>
+                            <li><a href="#t3">Project Engagement &amp; Payment</a></li>
+                            <li><a href="#t4">Revisions &amp; Approvals</a></li>
+                            <li><a href="#t5">Intellectual Property &amp; Ownership</a></li>
+                            <li><a href="#t6">Client Responsibilities</a></li>
+                            <li><a href="#t7">Confidentiality</a></li>
+                            <li><a href="#t8">Limitation of Liability</a></li>
+                            <li><a href="#t9">Termination of Services</a></li>
+                            <li><a href="#t10">Governing Law</a></li>
+                            <li><a href="#t11">Changes to Terms</a></li>
+                            <li><a href="#t12">Contact Information</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="policy-card">
+
+                        <p>Please read these Terms &amp; Conditions (&quot;Terms&quot;) carefully before engaging the services of <strong>Abronix Technologies</strong> (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;). By placing an order or using our services, you agree to be bound by these Terms.</p>
+
+                        <div class="highlight-box">
+                            <p>⚠️ If you do not agree with any part of these Terms, please do not proceed with our services. By continuing, you confirm your acceptance of these Terms in full.</p>
+                        </div>
+
+                        <h3 id="t1">1. Acceptance of Terms</h3>
+                        <p>By accessing our website, contacting us for services, or proceeding with any project engagement, you agree to comply with and be bound by these Terms &amp; Conditions. These Terms apply to all clients, visitors, and users of Abronix Technologies&apos; services.</p>
+
+                        <h3 id="t2">2. Services Offered</h3>
+                        <p>Abronix Technologies provides the following services, subject to these Terms:</p>
+                        <ul>
+                            <li>Website Design &amp; Development</li>
+                            <li>Logo &amp; Brand Identity Design</li>
+                            <li>Flyer &amp; Visiting Card Design</li>
+                            <li>Video Editing</li>
+                            <li>Domain &amp; SSL Setup</li>
+                            <li>Google Business Profile Setup</li>
+                            <li>Instagram &amp; Facebook Page Setup</li>
+                        </ul>
+                        <p>The specific scope, deliverables, and timeline for each project will be agreed upon in writing before work commences.</p>
+
+                        <h3 id="t3">3. Project Engagement &amp; Payment</h3>
+                        <p><strong>Quotation:</strong> All project quotes are valid for <strong>14 days</strong> from the date of issue unless otherwise stated.</p>
+                        <p><strong>Deposit:</strong> A non-refundable advance payment (as agreed upon per project) is required before work begins. This confirms your project slot and commitment.</p>
+                        <p><strong>Final Payment:</strong> The remaining balance is due upon project completion and before final files are delivered or websites are made live.</p>
+                        <p><strong>Payment Methods:</strong> We accept bank transfers, UPI, and other agreed payment methods. Receipts will be provided.</p>
+                        <p><strong>Late Payment:</strong> Work may be paused if payment is overdue by more than 7 days without prior communication.</p>
+
+                        <h3 id="t4">4. Revisions &amp; Approvals</h3>
+                        <p>Each project includes a specified number of revision rounds as agreed before commencement. Additional revisions beyond the agreed scope may incur additional charges.</p>
+                        <ul>
+                            <li>Client approval is required at each milestone before the next stage commences.</li>
+                            <li>Feedback must be provided within <strong>7 days</strong> of receiving a draft; delays may affect project timelines.</li>
+                            <li>Approved work that subsequently requires changes will be treated as a new revision request.</li>
+                        </ul>
+
+                        <h3 id="t5">5. Intellectual Property &amp; Ownership</h3>
+                        <p><strong>Client Ownership:</strong> Upon receipt of full and final payment, all approved creative deliverables (logos, designs, etc.) become the exclusive property of the client.</p>
+                        <p><strong>Portfolio Rights:</strong> Abronix Technologies reserves the right to display completed work in our portfolio, website, and social media channels for promotional purposes, unless the client requests otherwise in writing.</p>
+                        <p><strong>Third-Party Assets:</strong> Stock images, fonts, or other licensed assets incorporated into deliverables are subject to their respective licences. We will notify you of any third-party licences that may require additional purchase.</p>
+                        <p><strong>Pre-Payment Work:</strong> All designs and materials remain the property of Abronix Technologies until full payment is received.</p>
+
+                        <h3 id="t6">6. Client Responsibilities</h3>
+                        <p>The client agrees to:</p>
+                        <ul>
+                            <li>Provide all necessary content, brand guidelines, credentials, and assets in a timely manner.</li>
+                            <li>Ensure all materials provided are legally owned or licensed by the client.</li>
+                            <li>Provide clear and consolidated feedback to avoid confusion or rework.</li>
+                            <li>Not hold Abronix Technologies liable for delays caused by late client responses or missing content.</li>
+                        </ul>
+
+                        <h3 id="t7">7. Confidentiality</h3>
+                        <p>Both parties agree to keep confidential any proprietary information, business data, or trade secrets exchanged during the project. This obligation survives the completion of any project or termination of services. We will not share your confidential business information with any third party without your explicit written consent.</p>
+
+                        <h3 id="t8">8. Limitation of Liability</h3>
+                        <p>Abronix Technologies shall not be held liable for:</p>
+                        <ul>
+                            <li>Any indirect, incidental, or consequential damages arising from use of our services.</li>
+                            <li>Loss of data, revenue, or business opportunities resulting from project deliverables.</li>
+                            <li>Third-party platform changes (e.g., Google, Instagram, Facebook policy updates) that affect setup work previously completed.</li>
+                            <li>Errors or omissions in content or information provided by the client.</li>
+                        </ul>
+                        <p>Our total liability to you shall not exceed the amount paid by you for the specific service in question.</p>
+
+                        <h3 id="t9">9. Termination of Services</h3>
+                        <p><strong>By the Client:</strong> You may terminate a project at any time. However, the advance payment is non-refundable. Any work completed up to the termination date will be invoiced at our standard rate.</p>
+                        <p><strong>By Abronix Technologies:</strong> We reserve the right to terminate a project if the client is unresponsive for more than <strong>30 days</strong>, engages in abusive behaviour, or requests content that violates applicable laws or our ethical standards. In such cases, no refund of advance payment will be provided.</p>
+
+                        <h3 id="t10">10. Governing Law</h3>
+                        <p>These Terms &amp; Conditions shall be governed by and construed in accordance with the laws of <strong>India</strong>. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in <strong>Gujarat, India</strong>.</p>
+
+                        <h3 id="t11">11. Changes to Terms</h3>
+                        <p>We reserve the right to update or modify these Terms &amp; Conditions at any time. The revised Terms will be posted on this page with an updated &quot;Last updated&quot; date. Continued use of our services after changes are posted constitutes acceptance of the new Terms.</p>
+
+                        <h3 id="t12">12. Contact Information</h3>
+                        <p>For any questions or concerns regarding these Terms &amp; Conditions, please contact us:</p>
+
+                        <div class="contact-note">
+                            <p>
+                                <strong>Abronix Technologies</strong><br>
+                                📧 Email: <a href="mailto:abronixtechnologies@gmail.com">abronixtechnologies@gmail.com</a><br>
+                                📷 Instagram: <a href="https://www.instagram.com/AbronixTechnologies" target="_blank">@abronixtechnologies</a><br>
+                                📘 Facebook: <a href="https://facebook.com/AbronixTechnologies" target="_blank">facebook.com/AbronixTechnologies</a><br>
+                                🕐 Business Hours: Mon–Sun, 9:30 AM – 6:30 PM
+           
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #1A1A2E; border-top: 3px solid var(--gold); padding: 30px 0; text-align: center">
+        <p class="footer" style="font-size: .8rem; color: rgba(255,255,255,.3); margin: 0">
+            © <span id="currentYear" style="color: rgba(255,255,255,.28)"></span>
+            <span style="color: var(--gold)">
+                <a href="index.html">Abronix Technologies</a>
+
+            </span>. All rights reserved. &nbsp;|&nbsp; <a href="index.html" style="">Back to Home</a>
+        </p>
+    </footer>
+
+    <!-- ═══ SCROLL TO TOP ═══ -->
+    <button id="scrollTop" aria-label="Scroll to top" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // ── Current Year Get
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        const today = new Date();
+        const options = { day: '2-digit', month: 'long', year: 'numeric' };
+        document.getElementById("date").innerHTML =
+          today.toLocaleDateString("en-GB", options);
+
+        // ── Scroll-to-top button
+const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('show', window.scrollY > 400);
+        });
+    </script>
+</body>
+</html>
