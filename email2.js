@@ -1,1 +1,31 @@
-eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('c 7=\'x\';w v(0){c 6={b:0.b,1:0.1,u:0.1,a:0.a,9:0.9,8:0.8,t:"s r q p o n"};m.l(k,7,6).j(()=>{5.i("4-3 h g")}).f((2)=>{5.e("4-3 d:",2)})}',34,34,'data|reply_to|err|reply|Auto|console|params2|EMAILJS_AUTOREPLY_TEMPLATE_ID|message|service|phone|from_name|const|failed|error|catch|successfully|sent|log|then|EMAILJS_SERVICE_ID|send|emailjs|Technologies|Abronix|Contacting|for|You|Thank|subject|to_email|sendAutoReply|function|template_ept7ot2'.split('|'),0,{}))
+// ════════════════════════════════
+// EmailJS Auto Reply
+// ════════════════════════════════
+
+const EMAILJS_AUTOREPLY_TEMPLATE_ID = 'template_ept7ot2';
+
+function sendAutoReply(data) {
+
+    const params2 = {
+        from_name: data.from_name,
+        reply_to: data.reply_to,
+        to_email: data.reply_to,   // IMPORTANT
+        phone: data.phone,
+        service: data.service,
+        message: data.message,
+        subject: "Thank You for Contacting Abronix Technologies"
+    };
+
+    emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_AUTOREPLY_TEMPLATE_ID,
+        params2
+    )
+    .then(() => {
+        console.log("Auto-reply sent successfully");
+})
+.catch((err) => {
+    console.error("Auto-reply failed:", err);
+});
+
+}
