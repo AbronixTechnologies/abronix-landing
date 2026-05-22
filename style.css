@@ -1787,3 +1787,36 @@ footer {
         font-size: 1.6rem;
     }
 }
+/* ══ Footer Bottom Right Counter ══ */
+.visitor-counter {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 9999;
+
+    background: #fff;
+    padding: 4px 6px;
+    border-radius: 6px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Desktop */
+.visitor-counter img {
+    width: 120px;
+    height: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .visitor-counter {
+        bottom: 5px;
+        padding: 2px 4px;
+    }
+
+    .visitor-counter img {
+        width: 80px;   /* smaller size on mobile */
+    }
+}
