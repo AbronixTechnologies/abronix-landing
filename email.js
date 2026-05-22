@@ -1,1 +1,72 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('b 1g=\'2C-c\';b 17=\'2B\';b 16=\'2A\';(H(){6(I y!==\'19\')y.2z(1g)})();b g=5.4(\'2y\');g.2x(\'2w\',2v H(e){e.2u();e.2t();1e h=J;b 1f=g.14(\'[2s]\');1f.13(f=>{f.t.12(\'k-K\',\'k-h\');1e v=J;6(f.A===\'L\'){v=f.2r}m 6(f.A===\'S\'){v=f.8.j()!==\'\'&&/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.1b(f.8.j())}m 6(f.2q===\'2p\'){v=f.8!==\'\'&&f.8!==E}m{v=f.8.j().2o>=(2n(f.2m(\'2l\'))||1)}6(!v){h=w;6(f.A===\'L\'){5.4(\'1d\').n.1c=\'2k\'}m{f.t.z(\'k-K\')}}m{6(f.A===\'L\'){5.4(\'1d\').n.1c=\'2j\'}m{f.t.z(\'k-h\')}}});b u=5.4(\'18\');6(u.8.j()!==\'\'){b 1a=u.8.j();6(!/^[+\\d\\s\\-()]{7,20}$/.1b(1a)){u.t.z(\'k-K\');h=w}m{u.t.z(\'k-h\')}}6(!h)2i;b 9=5.4(\'2h\');b 3=5.4(\'2g\');9.B=J;9.r=\'<i q="p l-2f l-2e o-2"></i>2d…\';3.x=\'g-3\';3.11=\'\';2c{6(I y===\'19\')2b 2a 29(\'Z 28 27\');b G={26:5.4(\'25\').8.j(),23:5.4(\'22\').8.j(),u:5.4(\'18\').8.j()||\'21 1Z\',1Y:5.4(\'1X\').8,1W:5.4(\'1V\').8.j(),1U:\'1T 1S\',1R:"1Q 1P 1O"};1N y.T(17,16,G);6(I 15===\'H\'){15(G)}3.x=\'g-3 1M\';3.r=\'<i q="p l-10-V o-2"></i>D 1L 1K! 1J\\\'1I 1H 1G U 1F 1E 24 1D.\';g.1C();g.14(\'.k-h\').13(f=>f.t.12(\'k-h\'));5.4(\'1B\').11=\'0\';9.r=\'<i q="p l-10 o-2"></i>1A!\';9.n.C=\'#1z\';1y(()=>{9.r=\'<i q="p l-O-N o-2"></i>M D\';9.n.C=\'\';9.B=w;3.x=\'g-3\'},1x)}1w(F){1v.W(\'Z 1u 1t:\',Y.X(F,E,2));1s(Y.X(F,E,2));3.x=\'g-3 W\';3.r=\'<i q="p l-1r-V o-2"></i>1q U T. 1p S 1o 1n 1m <a 1l="1k:R@Q.P" n="1j:1i(--1h)">R@Q.P</a>\';9.r=\'<i q="p l-O-N o-2"></i>M D\';9.n.C=\'\';9.B=w}});',62,163,'|||msg|getElementById|document|if||value|btn||const|||||form|valid||trim|is|fa|else|style|me|fas|class|innerHTML||classList|phone|ok|false|className|emailjs|add|type|disabled|background|Message|null|err|params|function|typeof|true|invalid|checkbox|Send|plane|paper|com|gmail|abronixtechnologies|email|send|to|circle|error|stringify|JSON|EmailJS|check|textContent|remove|forEach|querySelectorAll|sendAutoReply|EMAILJS_TEMPLATE_ID|EMAILJS_SERVICE_ID|cf_phone|undefined|ph|test|display|agreeError|let|fields|EMAILJS_PUBLIC_KEY|gold|var|color|mailto|href|at|directly|us|Please|Failed|exclamation|alert|ERROR|FULL|console|catch|5000|setTimeout|16a34a|Sent|charCount|reset|hours|within|you|back|get|ll|We|successfully|sent|success|await|Inquiry|Contact|New|subject|Technologies|Abronix|to_name|cf_msg|message|cf_service|service|provided||Not|cf_email|reply_to||cf_name|from_name|loaded|not|Error|new|throw|try|Sending|spin|spinner|formMsg|submitBtn|return|none|block|minlength|getAttribute|parseInt|length|SELECT|tagName|checked|required|stopPropagation|preventDefault|async|submit|addEventListener|contactForm|init|template_nbpowsm|service_ja4v7bm|wd23Wm0SY7vVVO8'.split('|'),0,{}))
+try {
+    if (typeof emailjs === 'undefined') {
+        throw new Error('EmailJS not loaded');
+    }
+
+    const params = {
+        from_name: document.getElementById('cf_name').value.trim(),
+        reply_to:  document.getElementById('cf_email').value.trim(),
+        to_email:  document.getElementById('cf_email').value.trim(),
+        phone:     document.getElementById('cf_phone').value.trim() || 'Not provided',
+        service:   document.getElementById('cf_service').value,
+        message:   document.getElementById('cf_msg').value.trim(),
+        to_name:   'Abronix Technologies',
+        subject:   'New Contact Inquiry'
+    };
+
+    // 1️⃣ Send admin email
+    await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        params
+    );
+
+    // 2️⃣ Send auto reply
+    await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_AUTOREPLY_TEMPLATE_ID,
+        {
+            ...params,
+            subject: 'Thank You for Contacting Abronix Technologies'
+        }
+    );
+
+    // Success UI
+    msg.className = 'form-msg success';
+    msg.innerHTML =
+        '<i class="fas fa-check-circle me-2"></i>Message sent successfully! We\'ll get back to you within 24 hours.';
+
+    form.reset();
+
+    form.querySelectorAll('.is-valid')
+        .forEach(f => f.classList.remove('is-valid'));
+
+    document.getElementById('charCount').textContent = '0';
+
+    btn.innerHTML = '<i class="fas fa-check me-2"></i>Sent!';
+    btn.style.background = '#16a34a';
+
+    setTimeout(() => {
+        btn.innerHTML =
+            '<i class="fas fa-paper-plane me-2"></i>Send Message';
+
+        btn.style.background = '';
+        btn.disabled = false;
+        msg.className = 'form-msg';
+    }, 5000);
+
+} catch (err) {
+
+    console.error('EmailJS FULL ERROR:', err);
+
+    msg.className = 'form-msg error';
+
+    msg.innerHTML =
+        '<i class="fas fa-exclamation-circle me-2"></i>Failed to send. Please email us directly at <a href="mailto:abronixtechnologies@gmail.com" style="color:var(--gold)">abronixtechnologies@gmail.com</a>';
+
+    btn.innerHTML =
+        '<i class="fas fa-paper-plane me-2"></i>Send Message';
+
+    btn.style.background = '';
+    btn.disabled = false;
+}
