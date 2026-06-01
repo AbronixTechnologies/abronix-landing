@@ -429,6 +429,214 @@
                 gap: 5px;
             }
         }
+
+        /*----------------------*/
+        /* =========================
+   FINAL MOBILE + EXTRA SMALL FIX
+   (TERMS PAGE CLEAN VERSION)
+========================= */
+
+        /* global safety */
+        html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* prevent layout overflow */
+        * {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        /* =========================
+   HERO FIX
+========================= */
+
+        .hero h1 {
+            font-size: clamp(1.7rem, 6vw, 3rem);
+            line-height: 1.2;
+        }
+
+        /* =========================
+   GRID FIX
+========================= */
+
+        .page-wrapper {
+            grid-template-columns: 280px minmax(0, 1fr);
+        }
+
+        /* =========================
+   CONTENT SAFETY
+========================= */
+
+        .content-card {
+            overflow: hidden;
+        }
+
+            .content-card p,
+            .content-card li {
+                word-break: break-word;
+                overflow-wrap: break-word;
+            }
+
+        /* =========================
+   CONTACT CARD FIX (FINAL CLEAN)
+========================= */
+
+        /* remove underline completely */
+        .contact-card a,
+        .contact-card a:visited,
+        .contact-card a:hover,
+        .contact-card a:active,
+        .contact-card a:focus {
+            text-decoration: none !important;
+            color: inherit;
+            display: block;
+        }
+
+        /* contact item layout */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            padding: 14px 12px;
+            border-radius: 16px;
+        }
+
+            /* icon */
+            .contact-item i {
+                width: 52px;
+                min-width: 52px;
+                height: 52px;
+                border-radius: 14px;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+            }
+
+            /* text */
+            .contact-item div {
+                flex: 1;
+                min-width: 0;
+                line-height: 1.5;
+                word-break: break-word;
+            }
+
+        /* =========================
+   TABLET FIX
+========================= */
+
+        @media (max-width: 991px) {
+
+            .page-wrapper {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+                gap: 20px;
+            }
+
+            .toc {
+                position: relative;
+                top: 0;
+            }
+
+            .content-card {
+                padding: 25px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* =========================
+   EXTRA SMALL DEVICE FIX (320–480px)
+========================= */
+
+        @media (max-width: 480px) {
+
+            .content-card h2 {
+                font-size: 1.05rem;
+                padding-left: 10px;
+            }
+            /* navbar */
+            .navbar-brand {
+                font-size: 0.9rem;
+                max-width: 170px;
+            }
+
+            .back-btn {
+                width: 38px;
+                height: 38px;
+            }
+
+            /* hero */
+            .hero {
+                padding: 110px 15px 60px;
+            }
+
+                .hero h1 {
+                    font-size: 1.7rem;
+                }
+
+                .hero p {
+                    font-size: 0.9rem;
+                }
+
+            /* layout spacing */
+            .page-wrapper {
+                padding: 12px !important;
+                gap: 15px !important;
+            }
+
+            .content-card {
+                padding: 15px;
+                border-radius: 18px;
+            }
+
+            .toc {
+                padding: 15px;
+                border-radius: 18px;
+            }
+
+                .toc a {
+                    font-size: 13px;
+                    padding: 8px 10px;
+                }
+
+            /* contact fix */
+            .contact-card {
+                padding: 15px;
+            }
+
+            .contact-item {
+                align-items: flex-start;
+                gap: 10px;
+                padding: 10px;
+            }
+
+                .contact-item i {
+                    width: 42px;
+                    min-width: 42px;
+                    height: 42px;
+                    font-size: 18px;
+                    margin-top: 2px;
+                }
+
+                .contact-item div {
+                    font-size: 13.5px;
+                }
+
+            /* footer */
+            .footer {
+                padding: 20px 10px;
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 
