@@ -1391,14 +1391,24 @@ textarea.form-control {
 
     .contact-info-item {
         padding: 15px;
+        gap: 10px;
     }
 
+
     .contact-icon {
-        width: 55px;
-        height: 55px;
+        width: 25px;
+        height: 25px;
         font-size: 20px;
     }
 
+        .contact-icon i {
+            font-size: 10px;
+        }
+
+    .contact-info-item span {
+        font-size: 10px;
+    }
+    
     .form-control,
     .form-select {
         min-height: 54px;
