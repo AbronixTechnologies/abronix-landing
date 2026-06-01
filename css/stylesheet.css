@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --primary:#d11212;
     --dark:#111827;
 }
@@ -1408,7 +1408,7 @@ textarea.form-control {
     .contact-info-item span {
         font-size: 10px;
     }
-    
+
     .form-control,
     .form-select {
         min-height: 54px;
