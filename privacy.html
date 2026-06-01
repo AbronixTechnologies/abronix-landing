@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PRIMARY SEO -->
+    <title>Privacy Policy | Abronix Technologies</title>
+    <meta name="title" content="Privacy Policy | Abronix Technologies">
+    <meta name="description" content="Read the Privacy Policy of Abronix Technologies. Learn how we collect, use, and protect your personal information when using our website and services.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="Abronix Technologies">
+    <meta name="theme-color" content="#d11212">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://abronixtechnologies.github.io/abronix-landing/privacy.html">
+
+    <!-- Open Graph (for WhatsApp, Facebook sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy | Abronix Technologies">
+    <meta property="og:description" content="Understand how we collect, use, and protect your personal information.">
+    <meta property="og:url" content="https://abronixtechnologies.github.io/abronix-landing/privacy.html">
+    <meta property="og:image" content="https://abronixtechnologies.github.io/abronix-landing/images/og-image.png">
+    <meta property="og:site_name" content="Abronix Technologies">
+
+    <!-- TWITTER CARD -->
+    <!--<meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Privacy Policy | Abronix Technologies">
+    <meta name="twitter:description" content="How Abronix Technologies handles your data and privacy.">
+    <meta name="twitter:image" content="https://abronixtechnologies.github.io/abronix-landing/images/og-image.png">
+    <meta name="twitter:site" content="@abronix">-->
+
+    <!-- ══ ICONS / FAVICON FIXED ══ -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary:#d11212;
+            --primary-light:#ffe9e9;
+            --dark:#111827;
+            --gray:#6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 140px;
+        }
+
+        h2, section {
+            scroll-margin-top: 140px;
+        }
+
+        body {
+            font-family: 'Poppins',sans-serif;
+            background: #f6f8fb;
+            color: #333;
+            font-size: .9rem;
+        }
+
+        /* =========================
+                NAVBAR
+        ========================= */
+
+        .navbar {
+            background: rgba(255,255,255,.85);
+            backdrop-filter: blur(18px);
+            box-shadow: 0 5px 20px rgba(0,0,0,.05);
+            padding: 12px 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary)!important;
+        }
+
+        .back-btn {
+            width: 46px;
+            height: 46px;
+            border-radius: 14px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+            transition: .3s;
+        }
+
+            .back-btn:hover {
+                background: var(--primary);
+                color: #fff;
+            }
+
+        /* =========================
+                HERO
+        ========================= */
+        .hero {
+            padding: 140px 20px 90px;
+            background: linear-gradient(135deg,#d11212,#ff5959);
+            color: #fff;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: 900;
+                margin-bottom: 15px;
+            }
+
+            .hero p {
+                max-width: 700px;
+                margin: auto;
+                opacity: .95;
+                font-size: 1.05rem;
+            }
+
+        /* =========================
+                 MAIN LAYOUT
+        ========================= */
+
+        .policy-container {
+            max-width: 1300px;
+            margin: auto;
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 30px;
+        }
+
+        /* =========================
+                 SIDEBAR
+        ========================= */
+
+        .toc {
+            position: sticky;
+            top: 100px;
+            background: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            height: max-content;
+            box-shadow: 0 10px 35px rgba(0,0,0,.06);
+        }
+
+            .toc h5 {
+                font-weight: 800;
+                margin-bottom: 20px;
+            }
+
+            .toc a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 12px;
+                text-decoration: none;
+                color: #555;
+                border-radius: 12px;
+                transition: .3s;
+                margin-bottom: 5px;
+                font-size: 14px;
+            }
+
+                .toc a i {
+                    color: var(--primary);
+                }
+
+                .toc a:hover {
+                    background: var(--primary);
+                    color: #fff;
+                    transform: translateX(5px);
+                }
+
+                    .toc a:hover i {
+                        color: #fff;
+                    }
+
+        /* =========================
+                 CONTENT CARD
+        ========================= */
+
+        .policy-content {
+            background: #fff;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 15px 50px rgba(0,0,0,.05);
+        }
+
+            .policy-content h1 {
+                font-weight: 900;
+                color: var(--dark);
+                margin-bottom: 20px;
+            }
+
+            .policy-content h2 {
+                margin-top: 40px;
+                margin-bottom: 15px;
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: var(--primary);
+                border-left: 5px solid var(--primary);
+                padding-left: 15px;
+            }
+
+            .policy-content p,
+            .policy-content li {
+                color: #555;
+                line-height: 1.9;
+            }
+
+            .policy-content ul {
+                padding-left: 20px;
+            }
+
+        /* =========================
+                 CONTACT CARD
+        ========================= */
+
+        .contact-card {
+            margin-top: 20px;
+            background: #fff8f8;
+            border: 1px solid #ffdede;
+            border-radius: 24px;
+            padding: 25px;
+        }
+
+            .contact-card a {
+                text-decoration: none;
+            }
+        /* CARD ITEM (ANIMATED) */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 14px 12px;
+            border-radius: 16px;
+            transition: all .3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+            /* ICON */
+            .contact-item i {
+                width: 52px;
+                height: 52px;
+                border-radius: 14px;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                flex-shrink: 0;
+                transition: all .3s ease;
+                box-shadow: 0 8px 18px rgba(209,18,18,.25);
+            }
+
+            /* TEXT */
+            .contact-item a,
+            .contact-item div {
+                text-decoration: none;
+                color: #444;
+                font-weight: 500;
+                transition: .3s;
+            }
+
+            /* HOVER EFFECT (LIFT + GLOW) */
+            .contact-item:hover {
+                background: #ffffff;
+                transform: translateY(-6px);
+                box-shadow: 0 12px 30px rgba(0,0,0,.08);
+            }
+
+                /* ICON HOVER EFFECT */
+                .contact-item:hover i {
+                    transform: scale(1.1) rotate(5deg);
+                    background: #111827;
+                }
+
+                /* TEXT HOVER */
+                .contact-item:hover a,
+                .contact-item:hover div {
+                    color: var(--primary);
+                }
+
+            /* LEFT RED GLOW BAR */
+            .contact-item::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background: var(--primary);
+                transform: scaleY(0);
+                transition: .3s ease;
+                border-radius: 4px;
+            }
+
+            .contact-item:hover::before {
+                transform: scaleY(1);
+            }
+
+            .contact-item a {
+                text-decoration: none;
+                color: #444;
+                font-weight: 500;
+                transition: .3s;
+            }
+
+                .contact-item a:hover {
+                    color: var(--primary);
+                }
+
+        /* =========================
+   FOOTER
+========================= */
+
+        .footer {
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* =========================
+   FLOATING BUTTON
+========================= */
+
+        .floating-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 18px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 24px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(209,18,18,.35);
+            z-index: 999;
+        }
+
+        /* =========================
+   MOBILE
+========================= */
+
+        @media (max-width: 991px) {
+            .policy-container {
+                grid-template-columns: 1fr;
+            }
+
+            .toc {
+                position: relative;
+                top: 0;
+            }
+
+            .policy-content {
+                padding: 25px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+            /* Hover color + lift effect */
+            .footer a:hover {
+                color: #d11212;
+                transform: translateY(-2px);
+            }
+
+            /* Underline animation */
+            .footer a::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 0%;
+                height: 2px;
+                background: #d11212;
+                transition: width 0.3s ease;
+            }
+
+            .footer a:hover::after {
+                width: 100%;
+            }
+
+        .footer span {
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            .footer-links {
+                flex-direction: row;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top" id="navbar">
+        <div class="container">
+
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+            </a>
+
+            <a class="navbar-brand mx-auto" href="#">ABRONIX TECHNOLOGIES
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>
+                Your privacy is important to us. This policy explains how
+            Abronix Technologies collects, uses, stores, and protects
+            your information.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="policy-container">
+
+        <!-- SIDEBAR -->
+        <div class="toc">
+
+            <h5>
+                <i class="bi bi-list-ul me-2"></i>
+                Contents
+            </h5>
+
+            <a href="#intro"><i class="bi bi-dot"></i>Introduction</a>
+            <a href="#collect"><i class="bi bi-shield-lock"></i>Information We Collect</a>
+            <a href="#use"><i class="bi bi-gear"></i>How We Use Information</a>
+            <a href="#share"><i class="bi bi-share"></i>Sharing Information</a>
+            <a href="#cookies"><i class="bi bi-cookie"></i>Cookies & Tracking</a>
+            <a href="#retain"><i class="bi bi-clock-history"></i>Data Retention</a>
+            <a href="#security"><i class="bi bi-shield-check"></i>Security</a>
+            <a href="#rights"><i class="bi bi-person-check"></i>Your Rights</a>
+            <a href="#links"><i class="bi bi-link-45deg"></i>Third-Party Links</a>
+            <a href="#children"><i class="bi bi-person"></i>Children's Privacy</a>
+            <a href="#changes"><i class="bi bi-arrow-repeat"></i>Policy Changes</a>
+            <a href="#contact"><i class="bi bi-envelope"></i>Contact Us</a>
+
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="policy-content">
+
+            <h1>Privacy Policy</h1>
+
+            <p id="intro">
+                Welcome to Abronix Technologies ("we", "our", or "us").
+            We are committed to protecting your privacy and ensuring
+            transparency about how we collect, use, and safeguard your information.
+       
+            </p>
+
+            <h2 id="collect">1. Information We Collect</h2>
+
+            <ul>
+                <li>Name, email address, phone number and business information</li>
+                <li>IP address, browser type and device details</li>
+                <li>Website usage analytics and interaction data</li>
+                <li>Communication and project-related information</li>
+            </ul>
+
+            <h2 id="use">2. How We Use Your Information</h2>
+
+            <ul>
+                <li>Provide requested services</li>
+                <li>Respond to inquiries</li>
+                <li>Improve website functionality</li>
+                <li>Enhance user experience</li>
+                <li>Analyze performance and security</li>
+            </ul>
+
+            <h2 id="share">3. How We Share Your Information</h2>
+
+            <p>
+                We never sell personal information. Data may be shared
+            with trusted service providers, legal authorities when
+            required, or during business restructuring.
+       
+            </p>
+
+            <h2 id="cookies">4. Cookies & Tracking</h2>
+
+            <p>
+                We use cookies and analytics technologies to improve
+            functionality and understand user behavior.
+       
+            </p>
+
+            <h2 id="retain">5. Data Retention</h2>
+
+            <p>
+                Data is retained for up to three years after project
+            completion unless a longer period is legally required.
+       
+            </p>
+
+            <h2 id="security">6. Security</h2>
+
+            <p>
+                We implement reasonable technical and organizational
+            measures to protect your information.
+       
+            </p>
+
+            <h2 id="rights">7. Your Rights</h2>
+
+            <p>
+                You may request access, correction, deletion, or restriction
+            of your personal information at any time.
+       
+            </p>
+
+            <h2 id="links">8. Third-Party Links</h2>
+
+            <p>
+                Our website may contain links to external websites.
+            We are not responsible for their privacy practices.
+       
+            </p>
+
+            <h2 id="children">9. Children's Privacy</h2>
+
+            <p>
+                We do not knowingly collect personal information from
+            children under 13 years of age.
+       
+            </p>
+
+            <h2 id="changes">10. Changes to This Policy</h2>
+
+            <p>
+                This policy may be updated periodically. Changes will be
+            reflected on this page.
+       
+            </p>
+
+            <h2 id="contact">11. Contact Us</h2>
+
+            <div class="contact-card">
+
+                <div class="contact-item">
+                    <i class="bi bi-building"></i>
+                    <div>
+                        <strong>Abronix Technologies</strong>
+                    </div>
+                </div>
+                <a href="mailto:abronixtechnologies@gmail.com">
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            abronixtechnologies@gmail.com
+                    
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/abronixtechnologies" target="_blank">
+                    <div class="contact-item">
+                        <i class="bi bi-instagram"></i>
+                        <div>
+                            @abronixtechnologies
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/AbronixTechnologies" target="_blank">
+                    <div class="contact-item">
+                        <i class="bi bi-facebook"></i>
+                        <div>
+                            AbronixTechnologies
+                        
+                        </div>
+                    </div>
+                </a>
+
+                <div class="contact-item">
+                    <i class="bi bi-clock-fill"></i>
+                    <div>
+                        Mon – Sun | 9:30 AM – 6:30 PM
+               
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2026 Abronix Technologies. All Rights Reserved.
+          <div class="footer-links">
+              <a href="#intro">Privacy Policy</a>
+              <span>|</span>
+              <a href="terms.html">Terms</a>
+          </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <button class="floating-btn" id="topBtn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="js/privacy-terms.js"></script>
+</body>
+</html>

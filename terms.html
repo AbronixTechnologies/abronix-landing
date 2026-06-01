@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PRIMARY SEO -->
+    <title>Terms &amp; Conditions | Abronix Technologies</title>
+    <meta name="title" content="Terms & Conditions | Abronix Technologies">
+    <meta name="description" content="Read the Terms & Conditions of Abronix Technologies. Understand our policies for website design, development, payments, revisions, and services.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="Abronix Technologies">
+    <meta name="theme-color" content="#d11212">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://abronixtechnologies.github.io/abronix-landing/terms.html">
+
+    <!-- Open Graph (for WhatsApp, Facebook sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Terms & Conditions | Abronix Technologies">
+    <meta property="og:description" content="Read the Terms & Conditions of Abronix Technologies for website design, development, and digital services.">
+    <meta property="og:url" content="https://abronixtechnologies.github.io/abronix-landing/terms.html">
+    <meta property="og:image" content="https://abronixtechnologies.github.io/abronix-landing/images/og-image.png">
+    <meta property="og:site_name" content="Abronix Technologies">
+
+    <!-- Twitter Card -->
+    <!--<meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Terms & Conditions | Abronix Technologies">
+    <meta name="twitter:description" content="Read the Terms & Conditions of Abronix Technologies.">
+    <meta name="twitter:image" content="https://abronixtechnologies.github.io/abronix-landing/og-image.png">
+    <meta name="twitter:site" content="@abronix">-->
+
+    <!-- ══ ICONS / FAVICON FIXED ══ -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary:#d11212;
+            --primary-light:#ffe9e9;
+            --dark:#111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 140px;
+        }
+
+        h2, section {
+            scroll-margin-top: 140px;
+        }
+
+        body {
+            font-family: 'Poppins',sans-serif;
+            background: #f6f8fb;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            background: rgba(255,255,255,.88);
+            backdrop-filter: blur(18px);
+            box-shadow: 0 5px 20px rgba(0,0,0,.05);
+            padding: 12px 0;
+        }
+
+        .navbar-brand {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary)!important;
+        }
+
+        .back-btn {
+            width: 46px;
+            height: 46px;
+            border-radius: 14px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+            transition: .3s;
+        }
+
+            .back-btn:hover {
+                background: var(--primary);
+                color: #fff;
+            }
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(135deg,#d11212,#ff5d5d);
+            color: #fff;
+            padding: 140px 20px 90px;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: 900;
+                margin-bottom: 15px;
+            }
+
+            .hero p {
+                max-width: 750px;
+                margin: auto;
+                opacity: .95;
+            }
+
+        /* LAYOUT */
+
+        .page-wrapper {
+            max-width: 1300px;
+            margin: auto;
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 30px;
+        }
+
+        /* SIDEBAR */
+
+        .toc {
+            position: sticky;
+            top: 100px;
+            background: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 0 10px 35px rgba(0,0,0,.06);
+            height: max-content;
+        }
+
+            .toc h5 {
+                font-weight: 800;
+                margin-bottom: 20px;
+            }
+
+            .toc a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 12px;
+                text-decoration: none;
+                color: #555;
+                border-radius: 12px;
+                transition: .3s;
+                margin-bottom: 4px;
+                font-size: 14px;
+            }
+
+                .toc a i {
+                    color: var(--primary);
+                }
+
+                .toc a:hover {
+                    background: var(--primary);
+                    color: #fff;
+                    transform: translateX(5px);
+                }
+
+                    .toc a:hover i {
+                        color: #fff;
+                    }
+
+        /* CONTENT */
+
+        .content-card {
+            background: #fff;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 15px 50px rgba(0,0,0,.05);
+        }
+
+            .content-card h1 {
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+
+            .content-card h2 {
+                margin-top: 40px;
+                margin-bottom: 15px;
+                color: var(--primary);
+                font-size: 1.3rem;
+                font-weight: 800;
+                border-left: 5px solid var(--primary);
+                padding-left: 15px;
+            }
+
+            .content-card p,
+            .content-card li {
+                color: #555;
+                line-height: 1.9;
+            }
+
+            .content-card ul {
+                padding-left: 20px;
+            }
+
+        /* ALERT */
+
+        .notice {
+            background: #fff4f4;
+            border-left: 5px solid var(--primary);
+            padding: 15px 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+
+        /* CONTACT CARD */
+
+        .contact-card {
+            margin-top: 20px;
+            background: #fff8f8;
+            border: 1px solid #ffdede;
+            border-radius: 24px;
+            padding: 25px;
+        }
+
+            .contact-card a {
+                text-decoration: none;
+            }
+
+        /* CARD ITEM (ANIMATED) */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 14px 12px;
+            border-radius: 16px;
+            transition: all .3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+            /* ICON */
+            .contact-item i {
+                width: 52px;
+                height: 52px;
+                border-radius: 14px;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                flex-shrink: 0;
+                transition: all .3s ease;
+                box-shadow: 0 8px 18px rgba(209,18,18,.25);
+            }
+
+            /* TEXT */
+            .contact-item a,
+            .contact-item div {
+                text-decoration: none;
+                color: #444;
+                font-weight: 500;
+                transition: .3s;
+            }
+
+            /* HOVER EFFECT (LIFT + GLOW) */
+            .contact-item:hover {
+                background: #ffffff;
+                transform: translateY(-6px);
+                box-shadow: 0 12px 30px rgba(0,0,0,.08);
+            }
+
+                /* ICON HOVER EFFECT */
+                .contact-item:hover i {
+                    transform: scale(1.1) rotate(5deg);
+                    background: #111827;
+                }
+
+                /* TEXT HOVER */
+                .contact-item:hover a,
+                .contact-item:hover div {
+                    color: var(--primary);
+                }
+
+            /* LEFT RED GLOW BAR */
+            .contact-item::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background: var(--primary);
+                transform: scaleY(0);
+                transition: .3s ease;
+                border-radius: 4px;
+            }
+
+            .contact-item:hover::before {
+                transform: scaleY(1);
+            }
+
+            .contact-item i {
+                width: 52px;
+                height: 52px;
+                border-radius: 15px;
+                background: var(--primary);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+                flex-shrink: 0;
+            }
+
+            .contact-item a {
+                text-decoration: none;
+                color: #444;
+                font-weight: 500;
+                transition: .3s;
+            }
+
+                .contact-item a:hover {
+                    color: var(--primary);
+                }
+
+        /* FOOTER */
+
+        .footer {
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* SCROLL BUTTON */
+
+        .scroll-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 18px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 24px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(209,18,18,.35);
+            z-index: 999;
+        }
+
+        /* MOBILE */
+        @media (max-width: 991px) {
+            .page-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .toc {
+                position: relative;
+                top: 0;
+            }
+
+            .content-card {
+                padding: 25px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+            /* Hover color + lift effect */
+            .footer a:hover {
+                color: #d11212;
+                transform: translateY(-2px);
+            }
+
+            /* Underline animation */
+            .footer a::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 0%;
+                height: 2px;
+                background: #d11212;
+                transition: width 0.3s ease;
+            }
+
+            .footer a:hover::after {
+                width: 100%;
+            }
+
+        .footer span {
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            .footer-links {
+                flex-direction: row;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top">
+        <div class="container">
+
+            <a href="index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i>
+            </a>
+
+            <a class="navbar-brand mx-auto" href="#">ABRONIX TECHNOLOGIES
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Terms & Conditions</h1>
+            <p>
+                Please read these terms carefully before using our services.<br />
+                By engaging Abronix Technologies, you agree to these terms.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="page-wrapper">
+
+        <div class="toc">
+
+            <h5>
+                <i class="bi bi-list-ul me-2"></i>
+                Contents
+            </h5>
+
+            <a href="#intro"><i class="bi bi-dot"></i>Introduction</a>
+            <a href="#accept"><i class="bi bi-check-circle"></i>Acceptance</a>
+            <a href="#services"><i class="bi bi-briefcase"></i>Services</a>
+            <a href="#payment"><i class="bi bi-cash"></i>Payment</a>
+            <a href="#revision"><i class="bi bi-arrow-repeat"></i>Revisions</a>
+            <a href="#ip"><i class="bi bi-shield-lock"></i>Intellectual Property</a>
+            <a href="#client"><i class="bi bi-person"></i>Client Responsibilities</a>
+            <a href="#confidential"><i class="bi bi-eye-slash"></i>Confidentiality</a>
+            <a href="#liability"><i class="bi bi-exclamation-triangle"></i>Liability</a>
+            <a href="#termination"><i class="bi bi-x-circle"></i>Termination</a>
+            <a href="#law"><i class="bi bi-bank"></i>Governing Law</a>
+            <a href="#changes"><i class="bi bi-arrow-repeat"></i>Changes</a>
+            <a href="#contact"><i class="bi bi-envelope"></i>Contact</a>
+
+        </div>
+
+        <div class="content-card">
+
+            <h1>Terms & Conditions</h1>
+
+            <p id="intro">
+                These Terms & Conditions govern the use of services provided by
+            Abronix Technologies. By purchasing, requesting, or using any
+            service from us, you agree to comply with these terms.
+            </p>
+
+            <div class="notice">
+                <strong>Important:</strong>
+                If you do not agree with any part of these Terms,
+            please do not proceed with our services.
+            </div>
+
+            <h2 id="accept">1. Acceptance of Terms</h2>
+            <p>
+                By accessing or using our services, you acknowledge that you
+            have read, understood, and agreed to these Terms & Conditions.
+            </p>
+
+            <h2 id="services">2. Services Offered</h2>
+            <ul>
+                <li>Website Design & Development</li>
+                <li>Logo Design & Branding</li>
+                <li>Flyer &amp; Visiting Card Design</li>
+                <li>Video Editing Services</li>
+                <li>Social Media Setup & Management</li>
+                <li>Google Business Profile Setup</li>
+                <li>Domain, SSL & Business Setup Services</li>
+            </ul>
+
+            <h2 id="payment">3. Project Engagement & Payment</h2>
+            <p>
+                Advance payment may be required before work begins.
+            Final delivery of project files, source code, or assets
+            will be provided after full payment is received.
+            </p>
+
+            <h2 id="revision">4. Revisions & Approvals</h2>
+            <p>
+                Standard revisions are included as agreed during project
+            discussion. Additional revisions may incur extra charges.
+            </p>
+
+            <h2 id="ip">5. Intellectual Property</h2>
+            <p>
+                Upon full payment, ownership of the completed project
+            transfers to the client unless otherwise agreed.
+            Abronix Technologies reserves the right to showcase
+            completed work in its portfolio.
+            </p>
+
+            <h2 id="client">6. Client Responsibilities</h2>
+            <p>
+                Clients are responsible for providing accurate information,
+            required content, approvals, and timely feedback necessary
+            for project completion.
+            </p>
+
+            <h2 id="confidential">7. Confidentiality</h2>
+            <p>
+                Both parties agree to maintain confidentiality regarding
+            sensitive information shared during project execution.
+            </p>
+
+            <h2 id="liability">8. Limitation of Liability</h2>
+            <p>
+                Abronix Technologies shall not be liable for indirect,
+            incidental, or consequential damages arising from the
+            use of our services.
+            </p>
+
+            <h2 id="termination">9. Termination of Services</h2>
+            <p>
+                We reserve the right to suspend or terminate services
+            due to non-payment, misuse, abuse, or prolonged inactivity.
+            </p>
+
+            <h2 id="law">10. Governing Law</h2>
+            <p>
+                These Terms & Conditions shall be governed and interpreted
+            according to the laws of India, with jurisdiction in Gujarat.
+            </p>
+
+            <h2 id="changes">11. Changes to Terms</h2>
+            <p>
+                We may update these Terms from time to time.
+            Updated versions will be posted on this page.
+            </p>
+
+            <h2 id="contact">12. Contact Information</h2>
+
+            <div class="contact-card">
+
+                <div class="contact-item">
+                    <i class="bi bi-building"></i>
+                    <div>
+                        <strong>Abronix Technologies</strong>
+                    </div>
+                </div>
+                <a href="mailto:abronixtechnologies@gmail.com">
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            abronixtechnologies@gmail.com
+                    
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/abronixtechnologies" target="_blank">
+                    <div class="contact-item">
+                        <i class="bi bi-instagram"></i>
+                        <div>
+                            @abronixtechnologies
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/AbronixTechnologies" target="_blank">
+                    <div class="contact-item">
+                        <i class="bi bi-facebook"></i>
+                        <div>
+                            AbronixTechnologies
+                        
+                        </div>
+                    </div>
+                </a>
+
+                <div class="contact-item">
+                    <i class="bi bi-clock-fill"></i>
+                    <div>
+                        Mon – Sun | 9:30 AM – 6:30 PM
+               
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2026 Abronix Technologies. All Rights Reserved.
+          <div class="footer-links">
+              <a href="privacy.html">Privacy Policy</a>
+              <span>|</span>
+              <a href="#intro">Terms</a>
+          </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <button class="scroll-top" id="topBtn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="js/privacy-terms.js"></script>
+</body>
+</html>
+

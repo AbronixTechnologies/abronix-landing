@@ -1,0 +1,8 @@
+﻿User-agent: *
+Allow: /
+
+# Block private or unnecessary folders (optional)
+
+
+# Sitemap location (IMPORTANT)
+Sitemap: https://abronixtechnologies.github.io/abronix-landing/sitemap.xml
