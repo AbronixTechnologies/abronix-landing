@@ -53,3 +53,21 @@ abronix-landing/
 ├── js/
 ├── images/
 └── README.md
+
+**About Abronix Technologies**
+
+Abronix Technologies, based in **Anand, Gujarat, India**, helps businesses build a strong and impactful digital presence through professional website development, creative branding, and innovative design solutions. We transform ideas into powerful digital experiences that help brands grow, engage users, and stand out in today’s competitive online world.
+
+We specialize in designing and developing modern, responsive, and user-friendly websites tailored to business goals. Every project is crafted with clean design principles, strong performance, and SEO best practices to ensure maximum visibility and impact.
+
+From startups to established businesses in Anand and beyond, we are committed to delivering digital solutions that enhance brand identity and accelerate online growth.
+
+**Our Services Include:**
+
+Website Development
+UI/UX Design
+Branding & Identity Design
+Creative Graphic Design
+SEO-Friendly Web Solutions
+
+At **Abronix Technologies**, we don’t just build websites—we create meaningful digital experiences that help businesses succeed online.
